@@ -8,7 +8,7 @@ class ProductsPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
-    def click_add_button(self, index):
+    def click_add_button(self, index='1'):
         """Clicks the add to cart button of the element according to the index"""
         self.click_on(locator_handler(locators.ADD_TO_CAR_BUTTON, index))
 
